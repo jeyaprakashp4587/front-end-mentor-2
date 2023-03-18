@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: hsl(0, 0%, 95%);
+}
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300&display=swap');
+.container{
+    width: 70%;
+    height: 60%;
+    display: flex;
+    overflow: hidden;
+    border-radius: 0.7rem;
+}
+.box1{
+    background: hsl(31, 77%, 52%);
+    padding: 3rem;
+}
+.box1 h2{
+    font-size: 2.3rem;
+    padding: 2rem 0;
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+}
+.box1 p{
+    font-size: 1rem;
+    line-height: 2rem;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca',sans-serif;
+    font-weight: 400;
+}
+.box2{
+    background: hsl(184, 100%, 22%);
+    padding: 3rem;
+}
+.box2 h2{
+    font-size: 2.3rem;
+    padding: 2rem 0;
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+}
+.box2 p{
+    font-size: 1rem;
+    line-height: 2rem;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca',sans-serif;
+    font-weight: 400;
+}
+.box3{
+    background: hsl(179, 100%, 13%);
+    padding: 3rem;
+}
+.box3 h2{
+    font-size: 2.3rem;
+    padding: 2rem 0;
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+}
+.box3 p{
+    font-size: 1rem;
+    line-height: 2rem;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca',sans-serif;
+    font-weight: 400;
+}
+button{
+    padding: 1rem 2rem;
+    width: 80%;
+    border-radius: 1.5rem;
+    border: 1px solid white;
+    font-family: 'Lexend Deca',sans-serif;
+    font-size: 15px;
+    margin-top: 3rem;
+}
+button:hover{
+    transition: ease 0.5s;
+    border: 1px solid hsl(0, 0%, 95%);
+    cursor: pointer;
+}
+#bt1{
+    color: hsl(31, 77%, 52%);
+}
+#bt1:hover{
+    color: white;
+    background: transparent;
+}
+#bt2:hover{
+    color: white;
+    background: transparent;
+}
+#bt3:hover{
+    color: white;
+    background: transparent;
+}
+#bt2{
+    color: hsl(184, 100%, 22%);
+}
+#bt3{
+    color: hsl(179, 100%, 13%);
+}
+
+@media only screen and (max-width: 375px) {
+    body{
+        width: 100%;
+        height: auto;
+    }
+    .container{
+        width: 90%;
+        height: auto;
+        flex-wrap: wrap;
+        overflow: visible;
+        align-items: center;
+        padding: 2rem 0;
+    }
+    .box1, .box2, .box3{
+        height: 80%;
+    }
+    .box1{
+        border-radius: 0.7rem 0.7rem 0 0 ;
+    }
+    .box3{
+        border-radius: 0 0 0.7rem 0.7rem  ;
+    }
+    button{
+        margin-top: 2rem;
+    }
+}
